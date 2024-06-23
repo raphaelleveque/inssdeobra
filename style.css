@@ -31,7 +31,7 @@ body {
     align-items: center; /* Center vertically */
     min-height: 100vh; /* Ensure full height */
     flex-direction: column; /* Ensure content stacks vertically */
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 header {
