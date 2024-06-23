@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/assets/logo.png" sizes="32x32">
+
     <link rel="stylesheet" href="style.css">
     <title>INSS de Obra</title>
 </head>
@@ -17,20 +22,27 @@
     <main>
 
         <section class="principal">
-            <h1>Regularização de Obras na Receita Federal</h1>
-            <ul>
-                <li>Obras novas concluídas ou em andamento, antigas ou por iniciar.</li>
-                <li>Descontos legais de até 70% na obtenção da sua CND</li>
-                <li>Faço uma simulação gratuita e online deste custo para você.</li>
-                <li>Sua casa regularizada agora possível.</li>
-            </ul>
-            <button class="whatsapp principal">
-                <!-- Para encriptar a url: https://www.w3schools.com/tags/ref_urlencode.ASP -->
-                <a
-                    href="https://api.whatsapp.com/send/?phone=5562998080822&text=Fa%C3%A7a%20sua%20regulariza%C3%A7%C3%A3o%20j%C3%A1!!&type=phone_number&app_absent=0">
-                    Clique aqui para calcular!
-                </a>
-            </button>
+            <div class="texto">
+                <h1>Regularização de Obras na Receita Federal</h1>
+                <ul>
+                    <li>Obras novas concluídas ou em andamento, antigas ou por iniciar.</li>
+                    <li>Descontos legais de até 70% na obtenção da sua CND.</li>
+                    <li>Faço uma simulação gratuita e online deste custo para você.</li>
+                    <li>Sua casa regularizada agora possível.</li>
+                </ul>
+                <button class="whatsapp principal">
+                    <!-- Para encriptar a url: https://www.w3schools.com/tags/ref_urlencode.ASP -->
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5562998080822&text=Fa%C3%A7a%20sua%20regulariza%C3%A7%C3%A3o%20j%C3%A1!!&type=phone_number&app_absent=0">
+                        Entre em contato
+                    </a>
+                </button>
+            </div>
+
+            <div class="imagem">
+                <img src="assets/foto.png" alt="Foto da Juliana Barros">
+            </div>
+
         </section>
 
         <article class="atuacao">
@@ -40,85 +52,118 @@
                 de Débitos (CND).</p>
             <p>Faço também o planejamento para obras que serão iniciadas ou que já estejam em andamento, casos em que
                 não haverá incidência de multas, diminuindo ainda mais o custo tributário da obra.</p>
-            </article>
+        </article>
 
-        <section class="processo">
-            <p>A regularização de obras passa por três etapas principais:</p>
-            <div class="card">
-                <h4>PREFEITURA:</h4>
-                <p>Onde se solicita a aprovação do projeto e é emitido o alvará de construção. Com o término da construção, a prefeitura faz a vistoria do imóvel para a emissão do Habite-se que é o certificado de regularidade e segurança da sua obra. </p>
+        <article class="processo">
+            <h2>ETAPAS PRINCIPAIS DA REGULARIZAÇÃO</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h4>PREFEITURA:</h4>
+                    <p>Onde se solicita a aprovação do projeto e é emitido o alvará de construção. Com o término da
+                        construção, a prefeitura faz a vistoria do imóvel para a emissão do Habite-se que é o
+                        certificado de regularidade e segurança da sua obra. </p>
+                </div>
+                <div class="card">
+                    <h4>RECEITA FEDERAL:</h4>
+                    <p>Onde é feito o CNO (Cadastro Nacional de Obras) e é estimado o valor das contribuições
+                        previdenciárias dos trabalhadores da obra. O INSS de obra. Após o pagamento dessa contribuição,
+                        é expedida a CND (Certidão Negativa de Débitos) que é o documento que comprova a situação
+                        regular do imóvel perante a Receita Federal.</p>
+                </div>
+                <div class="card">
+                    <h4>CARTÓRIO:</h4>
+                    <p>Com a CND e Habite-se é feita a averbação da construção na matrícula do imóvel, finalizando a
+                        regularização.</p>
+                </div>
             </div>
-            <div class="card">
-                <h4>RECEITA FEDERAL:</h4>
-                <p>Onde é feito o CNO (Cadastro Nacional de Obras) e é estimado o valor das contribuições previdenciárias dos trabalhadores da obra. O INSS de obra. Após o pagamento dessa contribuição, é expedida a CND (Certidão Negativa de Débitos) que é o documento que comprova a situação regular do imóvel perante a Receita Federal.</p>
-            </div>
-            <div class="card">
-                <h4>CARTÓRIO:</h4>
-                <p>Com a CND e Habite-se é feita a averbação da construção na matrícula do imóvel, finalizando a regularização.</p>
-            </div>
-        </section>
+        </article>
+
 
         <article class="receita">
             <h2>PORQUE A RECEITA FEDERAL COBRA ESSE INSS DE OBRA</h2>
-            <p>Obras são realizadas por pessoas e, na contratação dessas pessoas, incide a cobrança do INSS. Toda pessoa física ou jurídica que esteja fazendo uma obra de construção civil, obra nova, reforma, ampliação e até demolição terá que pagar o INSS de obra. A não regularização da obra pode gerar multas que podem chegar até a 225% do valor devido, além de ter o nome inscrito em dívida ativa.</p>
-            <p>Portanto, quanto antes você procurar minha ajuda especializada, maiores as chances de economia neste mais alto tributo da construção civil.</p>
+            <p>Obras são realizadas por pessoas e, na contratação dessas pessoas, incide a cobrança do INSS. Toda pessoa
+                física ou jurídica que esteja fazendo uma obra de construção civil, obra nova, reforma, ampliação e até
+                demolição terá que pagar o INSS de obra. A não regularização da obra pode gerar multas que podem chegar
+                até a 225% do valor devido, além de ter o nome inscrito em dívida ativa.</p>
+            <p>Portanto, quanto antes você procurar minha ajuda especializada, maiores as chances de economia neste mais
+                alto tributo da construção civil.</p>
         </article>
 
         <article class="calculo">
             <h2>COMO É CALCULADO O VALOR A PAGAR PELA RECEITA FEDERAL</h2>
-            <p>A Receita Federal calcula os valores a pagar por aferição indireta, ou seja, é feita uma estimativa do custo de mão de obra e gerado o INSS a pagar sobre esse valor. Esta estimativa leva em consideração o Estado onde a obra foi construída, a metragem, sua finalidade,  tipo de material utilizado, etc e, com o meu amplo conhecimento na legislação, consigo diminuir consideravelmente os valores a pagar, conseguindo descontos que podem chegar a 70% do valor gerado automaticamente pelo sistema da Receita Federal.</p>
+            <p>A Receita Federal calcula os valores a pagar por aferição indireta, ou seja, é feita uma estimativa do
+                custo de mão de obra e gerado o INSS a pagar sobre esse valor. Esta estimativa leva em consideração o
+                Estado onde a obra foi construída, a metragem, sua finalidade, tipo de material utilizado, etc e, com o
+                meu amplo conhecimento na legislação, consigo diminuir consideravelmente os valores a pagar, conseguindo
+                descontos que podem chegar a 70% do valor gerado automaticamente pelo sistema da Receita Federal.</p>
         </article>
 
         <article class="nao-pagar">
             <h2>OBRAS FINALIZADAS ATÉ 2018 NÃO PAGAM O INSS DE OBRA</h2>
-            <p>É o que chamamos de decadência tributária. Por lei, o governo perde o direito de cobrar o tributo de obras finalizadas há mais de cinco anos. Mesmo assim, é necessário passar pela regularização da Receita Federal, porém não haverá valores a pagar.</p>
+            <p>É o que chamamos de decadência tributária. Por lei, o governo perde o direito de cobrar o tributo de
+                obras finalizadas há mais de cinco anos. Mesmo assim, é necessário passar pela regularização da Receita
+                Federal, porém não haverá valores a pagar.</p>
             <p>Faço todo o processo com conformidade fiscal para você que tem imóvel nestas condições.</p>
-            <p>Desde 2021 existe a comunicação entre as prefeituras e a Receita Federal, portanto, a partir do momento em que é concedido o alvará de construção, a Receita Federal é informada da sua obra. Com isso, poucas são as chances de se conseguir a decadência tributária para construções recentes.</p>
+            <p>Desde 2021 existe a comunicação entre as prefeituras e a Receita Federal, portanto, a partir do momento
+                em que é concedido o alvará de construção, a Receita Federal é informada da sua obra. Com isso, poucas
+                são as chances de se conseguir a decadência tributária para construções recentes.</p>
         </article>
 
         <article>
             <h2>POR QUE REGULARIZAR MEU IMÓVEL?</h2>
-            <p>Estar de acordo com a lei; imóvel irregular tem valor de mercado 30% inferior; facilitar sucessão em caso de morte; não ter o risco de perder o imóvel por dívidas do antigo proprietário; poder vender mais facilmente, inclusive através de financiamento; evitar multas e processos de cobrança. Lembre-se: por lei só é dono quem registra!</p>
+            <p>Estar de acordo com a lei; imóvel irregular tem valor de mercado 30% inferior; facilitar sucessão em caso
+                de morte; não ter o risco de perder o imóvel por dívidas do antigo proprietário; poder vender mais
+                facilmente, inclusive através de financiamento; evitar multas e processos de cobrança. Lembre-se: por
+                lei só é dono quem registra!</p>
         </article>
 
         <article>
-            <h2>ATENÇÃO</h2>
-            <p>Para termos segurança jurídica, todos os atos realizados precisam ter documentação comprobatória conforme exigências da Receita Federal. Quer saber quais são os documentos no seu caso, clique no link abaixo:</p>
-            <button class="whatsapp">
-                <!-- Para encriptar a url: https://www.w3schools.com/tags/ref_urlencode.ASP -->
-                <a
-                    href="https://api.whatsapp.com/send/?phone=5562998080822&text=Fa%C3%A7a%20sua%20regulariza%C3%A7%C3%A3o%20j%C3%A1!!&type=phone_number&app_absent=0">
-                    Clique aqui para calcular!
-                </a>
-            </button>
+            <h2><i class="fas fa-exclamation-triangle"></i> ATENÇÃO <i class="fas fa-exclamation-triangle"></i> </h2>
+            <p>Para termos segurança jurídica, todos os atos realizados precisam ter documentação comprobatória conforme
+                exigências da Receita Federal. Quer saber quais são os documentos no seu caso, clique no link abaixo:
+            </p>
+            <div class="documentacao-container">
+                <button class="whatsapp atencao">
+                    <!-- Para encriptar a url: https://www.w3schools.com/tags/ref_urlencode.ASP -->
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5562998080822&text=Fa%C3%A7a%20sua%20regulariza%C3%A7%C3%A3o%20j%C3%A1!!&type=phone_number&app_absent=0">
+                        Verifique sua documentação
+                    </a>
+                </button>
+            </div>
         </article>
+    </main>
 
-        <footer class="eu">
-            <h2>QUEM SOU EU?</h2>
-            <p>Me chamo Juliana Barros, sou advogada, atuando muitos anos com direito imobiliário e hoje faço regularização de obras no país inteiro. Tenho experiência em todo o processo burocrático da construção, incluindo também o canteiro de obras. Acredito que o conhecimento adquirido ao longo dos anos tem que ser compartilhado e que, através do meu trabalho, é possível ajudar e fazer diferença na vida das pessoas.</p>
-            <p>Para mim ter uma casa é mais que ter um teto para morar: é ter história, vida e sentimentos. Quem não se lembra da casa da infância ou da casa da vó? E ter uma casa regularizada é ter dignidade, cidadania e tranquilidade.</p>
+
+    <footer class="eu">
+        <h2>QUEM SOU EU?</h2>
+        <div class="footer-container">
+            <p>Me chamo Juliana Barros, sou advogada, atuando muitos anos com direito imobiliário e hoje faço regularização
+                de obras no país inteiro. Tenho experiência em todo o processo burocrático da construção, incluindo também o
+                canteiro de obras. Acredito que o conhecimento adquirido ao longo dos anos tem que ser compartilhado e que,
+                através do meu trabalho, é possível ajudar e fazer diferença na vida das pessoas.</p>
+            <p>Para mim ter uma casa é mais que ter um teto para morar: é ter história, vida e sentimentos. Quem não se
+                lembra da casa da infância ou da casa da vó? E ter uma casa regularizada é ter dignidade, cidadania e
+                tranquilidade.</p>
             <p>Por isso estou aqui: para assegurar que este processo seja menos oneroso, mais rápido e eficiente.</p>
             <p>Atendo a todos, sem distinção de qualquer tipo. </p>
-            
             <div class="socialmedia">
                 <button class="whatsapp footer">
                     <!-- Para encriptar a url: https://www.w3schools.com/tags/ref_urlencode.ASP -->
                     <a
                         href="https://api.whatsapp.com/send/?phone=5562998080822&text=Fa%C3%A7a%20sua%20regulariza%C3%A7%C3%A3o%20j%C3%A1!!&type=phone_number&app_absent=0">
-                        Clique aqui para calcular!
+                        Faça o seu orçamento já
                     </a>
                 </button>
-
                 <button class="instagram footer">
                     <!-- Para encriptar a url: https://www.w3schools.com/tags/ref_urlencode.ASP -->
-                    <a
-                        href="https://www.instagram.com/julianabarros_inssdeobra">
-                        @julianabarros_inssdeobra
+                    <a href="https://www.instagram.com/julianabarros_inssdeobra">
+                        Me siga no Instagram
                     </a>
                 </button>
-            </div>
-        </footer>
-    </main>
+        </div>
+        </div>
+    </footer>
 
 </body>
 
