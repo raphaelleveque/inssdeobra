@@ -115,6 +115,70 @@ button.whatsapp {
 button.whatsapp.principal {
     margin-top: 20px;
 }
+
+@media (max-width: 900px) {
+    main {
+        width: 80%;
+    }
+    .principal {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens na direção principal (vertical) */
+        text-align: center; /* Centraliza o texto dentro do container */
+    }
+    .principal .texto h1 {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .principal .texto ul {
+        font-size: 18px;
+    }
+    .principal .imagem {
+        margin-top: 20px; /* Espaçamento opcional acima da imagem */
+    }
+    .principal .imagem img {
+        width: 70%;
+        height: auto;
+        display: block; /* Garante que a imagem fique centralizada horizontalmente */
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    }
+
+    button.whatsapp.principal {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        width: 80%;
+    }
+    .principal .texto h1 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .principal .texto ul {
+        font-size: 16px;
+    }
+    .principal .imagem {
+        margin-top: 20px; /* Espaçamento opcional acima da imagem */
+    }
+    button.whatsapp.principal {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 20px 20px;
+        font-size: 15px;
+    }
+    .principal .imagem img {
+        width: 100%;
+    }
+}
+
+
 article {
     width: 90%;
     margin: auto;
@@ -162,6 +226,15 @@ article h2 {
     color: #666;
 }
 
+@media (max-width: 550px) {
+    article h2 {
+        font-size: 1.3rem;
+    }
+    .card p{
+        text-align: left;
+    }
+}
+
 .documentacao-container {
     display: flex;
     justify-content: center;
@@ -204,6 +277,7 @@ footer h2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 .whatsapp.footer {
@@ -232,4 +306,35 @@ footer h2 {
 .instagram.footer a {
     color: white;
 
+}
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-container {
+        width: 80%;
+    }
+
+    .footer-container p {
+        font-size: 1rem;
+    }
+
+    .socialmedia {
+        flex-direction: column;
+        gap: 30px;
+        margin-block: 70px;
+    }
+
+    .socialmedia button {
+        width: 200px;
+    }
 }
