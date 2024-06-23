@@ -226,6 +226,18 @@ article h2 {
     color: #666;
 }
 
+.regularizar ul {
+    list-style-type: disc; /* Tipo de marcador (ponto) */
+    margin-left: 20px; /* Recuo à esquerda da lista */
+    padding-left: 0; /* Remover o espaçamento interno padrão */
+}
+
+.regularizar li {
+    line-height: 2; /* Altura da linha para melhor legibilidade */
+    color: #666; /* Cor do texto dos itens */
+}
+
+
 @media (max-width: 550px) {
     article h2 {
         font-size: 1.3rem;
